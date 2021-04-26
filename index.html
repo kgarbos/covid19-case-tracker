@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.0.2/chart.js"></script>
+  <title>Covid-19 App</title>
+</head>
+<body>
+  <div class="row">
+
+    <div class="column" id="col1">
+
+      <h1 class="header">COVID-19 Canada</h1>
+      <h2>Today's Date: <h4><p id="date"></p></h4> </h2>
+      <h3 id="province">Province</h3>
+        
+      <select id="provNames">
+        <option value="Canada">Canada</option>
+        <option value="Ontario">Ontario</option>
+        <option value="Quebec">Quebec</option>
+        <option value="British Columbia">British Columbia</option>
+        <option value="Alberta">Alberta</option>
+        <option value="Saskatchewan">Saskatchewan</option>
+        <option value="Manitoba">Manitoba</option>
+        <option value="Newfoundland and Labrador">Newfoundland and Labrador</option>
+        <option value="New Brunswick">New Brunswick</option>
+        <option value="Nova Scotia">Nova Scotia</option>
+        <option value="Prince Edward Island">Prince Edward Island</option>
+        <option value="Yukon">Yukon</option>
+        <option value="Northwest Territories">Northwest Territories</option>
+        <option value="Nunavut">Nunavut</option>
+      </select>
+
+      <h3 class="c-cases">Confirmed Cases</h3>
+      <h2>Daily: <p id="daily"></p></h2>
+      <h2>Total: <p id="total"></p></h2>
+
+    </div>
+    
+    <div class="column" id="col2">
+      
+      <div class="wrapper">
+        <canvas id="dailyChart"></canvas>
+        <canvas id="totalChart"></canvas>
+      </div>
+
+    </div>
+    
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

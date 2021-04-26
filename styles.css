@@ -1,0 +1,170 @@
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  text-align: center;
+}
+
+#col1 {
+  margin: 2px;
+  text-align: center;
+}
+
+#col2 {
+  margin: 2px;
+}
+
+/* Container for flexboxes */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create four equal columns */
+.column {
+  flex: 25%;
+  padding: 20px;
+}
+
+#daily {
+  color: blue;
+  font-size: 1.25rem;
+  font-family: 'Open Sans', sans-serif; 
+  font-weight: 700;
+}
+
+#total {
+  color: red;
+  font-size: 1.25rem;
+  font-family: 'Open Sans', sans-serif; 
+  font-weight: 700;
+}
+
+.wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#dailyChart {
+  width: 600px;
+  height: 400px;
+  margin-bottom: 50px;
+}
+
+#totalChart {
+  width: 600px;
+  height: 400px;
+}
+
+
+h1 { 
+  color: #111; 
+  font-family: 'Open Sans Condensed', sans-serif; 
+  font-size: 2rem; 
+  font-weight: 700; 
+  line-height: 64px; 
+  margin: 0 0 0; 
+  padding: 20px 30px; 
+  text-align: center; 
+  text-transform: uppercase; 
+}
+
+
+h2 { 
+  color: #111; 
+  font-family: 'Open Sans Condensed', sans-serif; 
+  font-size: 1.25rem; 
+  font-weight: 700; 
+  line-height: 48px; 
+  margin: 0 0 24px; 
+  padding: 0 30px; 
+  text-align: center; 
+  text-transform: uppercase; 
+}
+
+.c-cases {
+  color: #111; 
+  font-family: 'Open Sans Condensed', sans-serif; 
+  font-size: 1.5rem; 
+  font-weight: 700; 
+  line-height: 48px; 
+  margin-top: 25px;
+  margin-bottom: -5px; 
+  padding: 0 30px; 
+  text-align: center; 
+  text-transform: uppercase; 
+}
+
+
+h3, p { 
+  color: #111; 
+  font-family: 'Open Sans', sans-serif; 
+  font-size: 16px; 
+  line-height: 28px; 
+  margin: 0 0 48px; 
+}
+
+#province {
+  font-weight: 700;
+  margin-bottom: 10px; 
+  font-size: 1.2rem;
+  text-align: center; 
+  text-transform: uppercase; 
+}
+
+/******************** MEDIA QUERIES ***************/
+
+@media(max-width: 992px) {
+  .column {
+    flex: 50%;
+  }
+}
+
+@media(max-width: 850px) {
+  .wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  #col1, #col2 {
+    align-self: center;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+}
+
+@media(max-width: 600px) {
+
+  #col1, #col2 {
+    align-self: center;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .wrapper {
+    max-width: 450px;
+    margin: 0 auto;
+  }
+}
+
+@media(max-width: 400px) {
+
+  #col1, #col2 {
+    align-self: center;
+    max-width: 350px;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .wrapper {
+    max-width: 450px;
+    margin: 0 auto;
+  }
+}
